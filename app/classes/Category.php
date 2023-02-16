@@ -13,23 +13,49 @@ class Category
         $this->categories=[
             0=>[
                 'id'=>1,
-                'categoryName'=>'T-shirt'
+                'categoryName'=>'T-shirt',
+                'image'=>'t-shirt.jpg'
             ],
             1=>[
                 'id'=>2,
-                'categoryName'=>'Jeans Pant'
+                'categoryName'=>'Jeans Pant',
+                 'image'=>'pant-3.jpg'
             ],
             2=>[
                 'id'=>3,
-                'categoryName'=>'Polo T-shirt'
+                'categoryName'=>'Polo T-shirt',
+                'image'=>'t-shirt.jpg',
+
             ],
             3=>[
                 'id'=>4,
-                'categoryName'=>'Jersy'
+                'categoryName'=>'Jersy',
+                'image'=>'jersy.jpg'
             ],
             4=>[
                 'id'=>5,
-                'categoryName'=>'Hoddie'
+                'categoryName'=>'Hoddie',
+                'image'=>'hodie-1.jpg'
+            ],
+            5=>[
+                'id'=>6,
+                'categoryName'=>'Hoddie',
+                'image'=>'hodie-1.jpg'
+            ],
+            6=>[
+                'id'=>7,
+                'categoryName'=>'Hoddie',
+                'image'=>'hodie-1.jpg'
+            ],
+            7=>[
+                'id'=>8,
+                'categoryName'=>'Hoddie',
+                'image'=>'hodie-1.jpg'
+            ],
+            8=>[
+                'id'=>9,
+                'categoryName'=>'Hoddie',
+                'image'=>'hodie-1.jpg'
             ],
         ];
     }

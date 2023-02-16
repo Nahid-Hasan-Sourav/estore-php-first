@@ -33,14 +33,14 @@
 
     <!--    COLLABORATE WITH.. START HERE-->
 <section>
-    <div class="container my-4">
+    <div class="container my-5">
        <div>
            <h4 class="text-center fw-bold">
-               We Collaborate With 250++ Leading Top<br>
+               We Collaborate With <span style="color:#FE5876;">250++</span> Leading Top<br>
                E Commerce and Brands
            </h4>
        </div>
-        <div class="d-flex align-content-center justify-content-center py-4">
+        <div class="d-flex align-content-center justify-content-center my-4">
             <marquee direction="">
             <img class="mx-3" style="width: 202px; height:33px;" src="asset/img/tokopedia.png"/>
             <img class="mx-3" style="width: 202px; height:33px;" src="asset/img/Balenciaga%20svg.png"/>
@@ -52,5 +52,70 @@
     </div>
 </section>
     <!--    COLLABORATE WITH.. END HERE-->
+
+    <!--    CATEGORIES START HERE-->
+<section>
+    <div class="container">
+        <div class="fw-bold my-3">
+            <h4>Browse Categories of<br>
+                The Store
+            </h4>
+        </div>
+        <div class="row g-3 mt-4">
+            <?php foreach ($AllCategories as $single){ ?>
+
+                <div class="col-md-3">
+                    <a href="">
+                    <div class="card rounded-0" >
+                        <img src="asset/img/<?php echo $single['image']; ?>" class="img-fluid" alt="..."
+                        style="width:100%; height:300px;"
+                        >
+
+                    </div>
+                    </a>
+                </div>
+
+    <?php } ?>
+
+        </div>
+    </div>
+
+</section>
+    <!--    CATEGORIES END HERE-->
+
+<section>
+    <div class="container">
+        <div class="my-5">
+            <h5 class="text-center fw-bold">Why Choose  <a class="navbar-brand fw-bold fs-3" href="#" >
+
+                    <span class=""
+                          style="color:#FE5876;"
+                    >E</span><span class="text-success">store</span>
+
+                </a>?</h5>
+        </div>
+        <div>
+            <div class="row my-2 py-3">
+
+                    <?php foreach($AllService as $item) {?>
+                    <div class="col-4 gx-4">
+                        <div class="card border-0">
+                            <img src="asset/img/<?php echo $item['image'] ?>" class="mx-auto d-block" alt="...."
+                            style="width:64px; height: 64px;"
+                            />
+                            <div class="card-body text-center">
+                                <h6><?php echo $item['title'] ?></h6>
+                                <p>
+                                    <?php echo $item['description'] ?>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+            </div>
+        </div>
+    </div>
+</section>
 
 <?php include 'footer.php' ?>
