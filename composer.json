@@ -1,0 +1,19 @@
+{
+  "name": "estore-php-first/estore-php-first",
+  "type": "project",
+  "description": "A simple php project",
+  "keywords": [],
+  "license": "",
+  "require": {
+
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4":{
+      "App\\": "app//"
+    }
+  }
+
+}
