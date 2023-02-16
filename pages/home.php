@@ -98,7 +98,7 @@
             <div class="row my-2 py-3">
 
                     <?php foreach($AllService as $item) {?>
-                    <div class="col-4 gx-4">
+                    <div class="col-md-4 col-12 gx-4">
                         <div class="card border-0">
                             <img src="asset/img/<?php echo $item['image'] ?>" class="mx-auto d-block" alt="...."
                             style="width:64px; height: 64px;"
@@ -115,6 +115,47 @@
 
             </div>
         </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <div class="my-4">
+            <h4 class="fw-bold">
+                Populer Products From<br>
+                All Brands
+            </h4>
+        </div>
+
+             <div class="row g-3">
+                   <?php foreach($AllProduct as $product){ ?>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="asset/img/<?php echo $product['image'] ?>"
+                            class=""
+                            style="width:100%; height:200px;"
+                            />
+
+                         <div class="card-body">
+                             <div class="d-flex justify-content-between">
+                                 <h5><?php echo $product['name']; ?></h5>
+                                 <p class="text-danger">
+                                     <span class="fw-bold">Price :</span>
+                                     <span>
+                                         <?php echo $product['price'] ?>
+                                     </span>
+
+                                 </p>
+                             </div>
+                             <p><?php echo $product['description']; ?></p>
+
+                             <a href="" class="btn btn-success fw-bold text-white">BUY NOW</a>
+                         </div>
+                        </div>
+                    </div>
+                   <?php } ?>
+            </div>
     </div>
 </section>
 

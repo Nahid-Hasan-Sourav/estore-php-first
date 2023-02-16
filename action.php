@@ -7,6 +7,9 @@ USE App\classes\Data;
    $category=new Category();
    $AllCategories=$category->getAllCategory();
 
+   $product=new Data();
+   $AllProduct=$product->getAllProduct();
+
    $service=new Data();
    $AllService=$service->service();
 //END
